@@ -1,0 +1,28 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>PRODUCTOS</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let i of listado">
+      <ion-label>{{i.nombre}}</ion-label>
+      <img src="assets\img\pokemonY.jfif">  
+      <ion-button>COMPRAR</ion-button>
+    </ion-item>
+  </ion-list>
+
+
+ </ion-content>
+ 
+  <ion-footer>
+    <div id="container">
+    <strong class="Footer"></strong>
+    </div>
+  </ion-footer>
